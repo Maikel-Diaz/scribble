@@ -85,4 +85,16 @@ public class DrawDemo
     {
         myCanvas.erase();
     }
+    
+    public void drawTriangle(int posicion1, int posicion2){
+        Pen pen = new Pen(posicion1, posicion2, myCanvas);
+        pen.setColor(Color.GREEN);
+        for (int i = 0; i < 3; i++) {
+            pen.move(100);
+            pen.turn(120);
+        }
+    }
+    
+    
+    
 }
