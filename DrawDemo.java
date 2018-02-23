@@ -117,4 +117,13 @@ public class DrawDemo
             System.out.println("No es posible dibujar un poligono de menos de 3 lados");
         }
     }
+    
+    public void drawSpiral(){
+        Pen pen = new Pen(260, 180, myCanvas);
+        pen.setColor(Color.BLUE);
+        for (int i = 12; i < 200; i++) {
+            pen.move(i);
+            pen.turn(90);
+        }
+    }
 }
